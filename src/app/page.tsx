@@ -77,16 +77,15 @@ export default function Home() {
                 <Instagram className="h-64 w-64" />
               </div>
               
-              <div className="relative z-10">
-                <div className="mx-auto mb-8 h-32 w-32 overflow-hidden rounded-full ring-4 ring-white shadow-xl">
-                  <Image
-                    src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2070&auto=format&fit=crop"
-                    alt="Instagram Profile"
-                    width={128}
-                    height={128}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
+                  <div className="mx-auto mb-8 h-32 w-32 overflow-hidden rounded-full ring-4 ring-white shadow-xl">
+                    <Image
+                      src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_4b7lon4b7lon4b7l-1766595910514.png?width=256&height=256&resize=contain"
+                      alt="Instagram Profile"
+                      width={128}
+                      height={128}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
                 <h2 className="text-3xl font-bold tracking-tight text-black md:text-4xl">
                   Follow us on Instagram
                 </h2>
