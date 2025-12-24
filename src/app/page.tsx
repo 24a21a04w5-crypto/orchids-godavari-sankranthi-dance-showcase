@@ -17,19 +17,14 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden bg-black py-20">
           <div className="absolute inset-0 z-0">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="h-full w-full object-cover opacity-60"
-            >
-              <source
-                src="https://assets.mixkit.co/videos/preview/mixkit-traditional-indian-dance-performance-40015-large.mp4"
-                type="video/mp4"
-              />
-            </video>
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+            <Image
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_u1h0bgu1h0bgu1h0-1766595910540.png?width=1920&height=1080&resize=contain"
+              alt="Cultural Festival Background"
+              fill
+              className="object-cover opacity-40"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
           </div>
 
           <div className="container relative z-10 px-4 text-center">
