@@ -113,7 +113,7 @@ export default function Home() {
               <div className="relative z-10 flex flex-col items-center">
                 <div className="group relative mb-10 h-40 w-40 overflow-hidden rounded-full p-1 ring-4 ring-white shadow-2xl transition-transform hover:scale-105">
                   <Image
-                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_4b7lon4b7lon4b7l-1766595910514.png?width=256&height=256&resize=contain"
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-8.03.03-PM-1766596163087.jpeg?width=8000&height=8000&resize=contain"
                     alt="Aay Memu Godarollamandi Profile"
                     width={160}
                     height={160}
