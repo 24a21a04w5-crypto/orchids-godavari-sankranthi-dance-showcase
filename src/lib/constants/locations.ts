@@ -4,6 +4,7 @@ export interface Location {
   mapUrl: string;
   description: string;
   image: string;
+  objectPosition?: string;
 }
 
 export const LOCATIONS: Location[] = [
@@ -55,6 +56,7 @@ export const LOCATIONS: Location[] = [
     mapUrl: "https://maps.app.goo.gl/aGr6Ak2nWGw7fvKJ7?g_st=aw",
     description: "Gudapalli ante Godavari culture ki pure representation! Sankranthi dances lo steps kaadu, tradition-respect-discipline complete avtadi! Ee village lo culture ledu, it's a way of life - valla every movement lo history untadi, valla every beat lo philosophy untadi!",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/GUDAPALLI-1766637899878.jpeg?width=8000&height=8000&resize=contain",
+    objectPosition: "top",
   },
   {
     id: "tekisettipalem",
