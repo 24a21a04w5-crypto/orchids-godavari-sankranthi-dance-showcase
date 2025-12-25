@@ -50,14 +50,14 @@ export const LOCATIONS: Location[] = [
     description: "Chintalamori ante Sankranthi morning simple start, night aythe explosion! Dance programs lo local talent full shine chestadi! Sunrise lo kolam, midday lo music, sunset lo celebration, night lo cultural fireworks - ee progression perfect untadi!",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-10.26.06-PM-1-1766595910504.jpeg?width=800&height=800&resize=contain",
   },
-  {
-    id: "gudapalli",
-    name: "Gudapalli",
-    mapUrl: "https://maps.app.goo.gl/aGr6Ak2nWGw7fvKJ7?g_st=aw",
-    description: "Gudapalli ante Godavari culture ki pure representation! Sankranthi dances lo steps kaadu, tradition-respect-discipline complete avtadi! Ee village lo culture ledu, it's a way of life - valla every movement lo history untadi, valla every beat lo philosophy untadi!",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/GUDAPALLI-1766637899878.jpeg?width=8000&height=8000&resize=contain",
-    objectPosition: "top",
-  },
+    {
+      id: "gudapalli",
+      name: "Gudapalli",
+      mapUrl: "https://maps.app.goo.gl/aGr6Ak2nWGw7fvKJ7?g_st=aw",
+      description: "Gudapalli ante Godavari culture ki pure representation! Sankranthi dances lo steps kaadu, tradition-respect-discipline complete avtadi! Ee village lo culture ledu, it's a way of life - valla every movement lo history untadi, valla every beat lo philosophy untadi!",
+      image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-8.03.03-PM-1-1766643753838.jpeg?width=8000&height=8000&resize=contain",
+      objectPosition: "bottom",
+    },
   {
     id: "tekisettipalem",
     name: "Tekisettipalem",
