@@ -11,9 +11,10 @@ interface LocationCardProps {
   description: string;
   image: string;
   mapUrl: string;
+  objectPosition?: string;
 }
 
-export function LocationCard({ name, description, image, mapUrl }: LocationCardProps) {
+export function LocationCard({ name, description, image, mapUrl, objectPosition }: LocationCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -29,6 +30,7 @@ export function LocationCard({ name, description, image, mapUrl }: LocationCardP
             alt={name}
             fill
             className="object-cover transition-transform duration-500 hover:scale-110"
+            style={{ objectPosition: objectPosition || "center" }}
           />
         </div>
         <CardHeader className="p-4 pb-2">
