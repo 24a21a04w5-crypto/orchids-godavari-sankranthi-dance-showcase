@@ -43,8 +43,8 @@ export const LOCATIONS: Location[] = [
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_4vio024vio024vio-1766595910516.png?width=800&height=800&resize=contain",
   },
   {
-    id: "chintalamori",
-    name: "Chintalamori",
+    id: "chintalamor",
+    name: "Chintalamor",
     mapUrl: "https://maps.app.goo.gl/xkJkBhjMbaBwFEYq5?g_st=aw",
     description: "Chintalamori ante Sankranthi morning simple start, night aythe explosion! Dance programs lo local talent full shine chestadi! Sunrise lo kolam, midday lo music, sunset lo celebration, night lo cultural fireworks - ee progression perfect untadi!",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-10.26.06-PM-1-1766595910504.jpeg?width=800&height=800&resize=contain",
@@ -64,7 +64,7 @@ export const LOCATIONS: Location[] = [
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-10.26.06-PM-1766595910515.jpeg?width=800&height=800&resize=contain",
   },
   {
-    id: "antervedhi",
+    id: "antervedh",
     name: "Antervedh",
     mapUrl: "https://maps.app.goo.gl/RhJr3uMijWBxkEQo6?g_st=aw",
     description: "Antarvedi ante Godavari divine gateway - where river Godavari Bay of Bengal lo merge avtadi! Sankranthi dance programs ikkada divine vibe tho jaruguthayi - spiritual energy, sacred waters, devotional atmosphere sagaram expose avtadi! Unique atmosphere - nature + spirituality + culture = transcendent experience!",
@@ -92,7 +92,7 @@ export const LOCATIONS: Location[] = [
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-10.26.07-PM-1766595910494.jpeg?width=800&height=800&resize=contain",
   },
   {
-    id: "ponamanda",
+    id: "ponamandaa",
     name: "Ponamandaa",
     mapUrl: "https://maps.app.goo.gl/ovAQdQseTQZiEPbeA?g_st=aw",
     description: "Ponamanda ante Godavari delta ki pure pulse! Sankranthi dance programs lo local style, mass steps, full crowd participation - ee combination delta energy expose avtadi! Backwater rhythm, coconut grove dancers, sagara janula celebration - ee tri-blend oka cultural explosion create chestadi!",
