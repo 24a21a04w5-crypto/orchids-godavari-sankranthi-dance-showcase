@@ -4,11 +4,13 @@ import { motion } from "framer-motion";
 import { Navbar } from "@/components/navbar";
 import { LocationCard } from "@/components/location-card";
 import { LOCATIONS } from "@/lib/constants/locations";
-import { Instagram, ArrowRight, Map as MapIcon, Play } from "lucide-react";
+import { Instagram, ArrowRight, Map as MapIcon, Mail, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
+  const profileImage = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-8.03.03-PM-1766596163087.jpeg?width=8000&height=8000&resize=contain";
+
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-black selection:text-white">
       <Navbar />
@@ -24,8 +26,8 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 className="mb-8 flex items-center gap-2 rounded-full bg-black/[0.03] px-4 py-1.5 text-sm font-semibold tracking-wide text-zinc-600 ring-1 ring-black/5"
               >
-                <MapIcon className="h-4 w-4" />
-                <span>EAST GODAVARI CULTURAL GUIDE</span>
+                <Instagram className="h-4 w-4" />
+                <span>@aay_memu_godarollamandi</span>
               </motion.div>
 
               <motion.h1
@@ -38,15 +40,15 @@ export default function Home() {
                 <span className="text-zinc-400">Dance Places</span>
               </motion.h1>
 
-              {/* Map Animation Video Container */}
+              {/* Instagram Profile Featured Image */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.4 }}
-                className="relative mt-16 aspect-video w-full max-w-5xl overflow-hidden rounded-[2.5rem] bg-zinc-100 shadow-2xl ring-1 ring-black/5"
+                className="relative mt-16 aspect-square w-full max-w-xl overflow-hidden rounded-[3rem] bg-zinc-100 shadow-2xl ring-1 ring-black/5 md:aspect-video md:max-w-5xl"
               >
                 <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-8.03.03-PM-1766596163087.jpeg?width=8000&height=8000&resize=contain"
+                  src={profileImage}
                   alt="Aay Memu Godarollamandi Culture"
                   fill
                   className="object-cover"
@@ -56,8 +58,8 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 
                 <div className="absolute bottom-8 left-8 text-left">
-                  <p className="text-sm font-bold tracking-widest text-white/60 uppercase">Traditional Heritage</p>
-                  <h3 className="text-2xl font-bold text-white">East Godavari District</h3>
+                  <p className="text-sm font-bold tracking-widest text-white/60 uppercase">Our Identity</p>
+                  <h3 className="text-2xl font-bold text-white">Aay Memu Godarollamandi</h3>
                 </div>
               </motion.div>
 
@@ -82,66 +84,11 @@ export default function Home() {
                 >
                   <a href="https://instagram.com/aay_memu_godarollamandi" target="_blank" rel="noopener noreferrer">
                     <Instagram className="mr-2 h-5 w-5" />
-                    Follow @aay_memu_godarollamandi
+                    Follow on Instagram
                   </a>
                 </Button>
               </motion.div>
             </div>
-          </div>
-        </section>
-
-        {/* Instagram Branding Section */}
-        <section className="bg-white py-32">
-          <div className="container px-4 mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="relative overflow-hidden rounded-[4rem] bg-zinc-50 p-12 md:p-24 text-center shadow-[0_32px_64px_-12px_rgba(0,0,0,0.05)]"
-            >
-              <div className="relative z-10 flex flex-col items-center">
-                <div className="group relative mb-10 h-40 w-40 overflow-hidden rounded-full p-1 ring-4 ring-white shadow-2xl transition-transform hover:scale-105">
-                  <Image
-                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-8.03.03-PM-1766596163087.jpeg?width=8000&height=8000&resize=contain"
-                    alt="Aay Memu Godarollamandi Profile"
-                    width={160}
-                    height={160}
-                    className="h-full w-full rounded-full object-cover"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 transition-opacity group-hover:opacity-100">
-                    <Instagram className="h-8 w-8 text-white" />
-                  </div>
-                </div>
-                
-                <h2 className="text-4xl font-black tracking-tight text-black md:text-5xl">
-                  Follow us on Instagram
-                </h2>
-                <p className="mt-4 text-2xl font-bold text-zinc-400">
-                  @aay_memu_godarollamandi
-                </p>
-                <p className="mt-6 max-w-xl text-lg text-zinc-600">
-                  Join our community of 100k+ followers celebrating the pride of Godavari culture, 
-                  festivals, and traditions every day.
-                </p>
-                
-                <Button
-                  asChild
-                  className="mt-12 h-16 rounded-full bg-black px-12 text-xl font-black transition-all hover:scale-105 hover:shadow-2xl"
-                >
-                  <a
-                    href="https://instagram.com/aay_memu_godarollamandi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Open Instagram <ArrowRight className="ml-2 h-6 w-6" />
-                  </a>
-                </Button>
-              </div>
-              
-              {/* Abstract background elements */}
-              <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-zinc-100 opacity-50 blur-3xl" />
-              <div className="absolute -left-20 -bottom-20 h-64 w-64 rounded-full bg-zinc-200 opacity-50 blur-3xl" />
-            </motion.div>
           </div>
         </section>
 
@@ -202,24 +149,63 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-zinc-100 bg-white py-20">
+      <footer className="border-t border-zinc-100 bg-white pt-32 pb-20">
         <div className="container px-4 mx-auto">
-          <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
-            <div className="text-center md:text-left">
-              <p className="text-2xl font-black tracking-tighter">Aay Memu Godarollamandi</p>
-              <p className="mt-2 text-zinc-500">Celebrating the culture of East Godavari.</p>
+          <div className="grid gap-16 md:grid-cols-2 lg:grid-cols-3">
+            <div className="lg:col-span-2">
+              <div className="flex items-center gap-2 text-red-500 mb-6">
+                <Heart className="h-5 w-5 fill-current" />
+                <span className="font-bold tracking-widest uppercase text-sm">Made with Love</span>
+              </div>
+              <h2 className="text-3xl font-black tracking-tight text-black mb-8">
+                Preserving Godavari Culture
+              </h2>
+              <div className="space-y-4 text-lg text-zinc-600 max-w-2xl">
+                <p>
+                  This website is made with love for Godavari culture and Sankranthi traditions.
+                  Idhi money kosam kaadu, publicity kosam kaadu.
+                </p>
+                <p>
+                  Mana villages, mana dance, mana Konaseema identity ni gurthu pettukovadaniki matrame.
+                </p>
+                <p className="pt-4 font-medium italic">
+                  If any details need correction or you want to share memories, message cheyyandi freely.
+                </p>
+              </div>
             </div>
-            <div className="flex gap-6">
-              <a href="#" className="text-sm font-bold hover:text-zinc-600">Home</a>
-              <a href="#places" className="text-sm font-bold hover:text-zinc-600">Places</a>
-              <a href="#about" className="text-sm font-bold hover:text-zinc-600">About</a>
-              <a href="https://instagram.com/aay_memu_godarollamandi" className="text-sm font-bold hover:text-zinc-600">Instagram</a>
+
+            <div className="flex flex-col">
+              <h3 className="text-sm font-black tracking-widest text-zinc-400 uppercase mb-8">Get in Touch</h3>
+              <a 
+                href="mailto:24A21A04W5@gmail.com" 
+                className="group flex items-center gap-4 rounded-3xl bg-zinc-50 p-6 transition-all hover:bg-black hover:text-white"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm group-hover:bg-zinc-800">
+                  <Mail className="h-6 w-6 text-black group-hover:text-white" />
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-zinc-400 group-hover:text-zinc-500">Email Suggestions</p>
+                  <p className="font-bold">24A21A04W5@gmail.com</p>
+                </div>
+              </a>
+              
+              <div className="mt-12 flex gap-6">
+                <a href="https://instagram.com/aay_memu_godarollamandi" className="text-zinc-400 transition-colors hover:text-black">
+                  <Instagram className="h-6 w-6" />
+                </a>
+              </div>
             </div>
           </div>
-          <div className="mt-20 border-t border-zinc-100 pt-10 text-center">
+
+          <div className="mt-32 border-t border-zinc-100 pt-12 flex flex-col items-center justify-between gap-6 md:flex-row">
             <p className="text-xs font-bold tracking-widest text-zinc-400 uppercase">
               © {new Date().getFullYear()} AAY MEMU GODAROLLAMANDI. ALL RIGHTS RESERVED.
             </p>
+            <div className="flex gap-8">
+              <a href="#" className="text-xs font-black tracking-widest uppercase hover:text-zinc-500">Home</a>
+              <a href="#places" className="text-xs font-black tracking-widest uppercase hover:text-zinc-500">Places</a>
+              <a href="#about" className="text-xs font-black tracking-widest uppercase hover:text-zinc-500">About</a>
+            </div>
           </div>
         </div>
       </footer>
