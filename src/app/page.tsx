@@ -113,6 +113,7 @@ export default function Home() {
                   description={location.description}
                   image={location.image}
                   mapUrl={location.mapUrl}
+                  objectPosition={location.objectPosition}
                 />
               ))}
             </div>
