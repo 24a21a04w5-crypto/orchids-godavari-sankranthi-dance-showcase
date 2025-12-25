@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
-  const profileImage = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-8.03.03-PM-1766596163087.jpeg?width=8000&height=8000&resize=contain";
+  const profileImage = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-25-at-11.46.06-AM-1-1766643385870.jpeg?width=8000&height=8000&resize=contain";
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-black selection:text-white">
