@@ -43,27 +43,16 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.4 }}
-                className="relative mt-16 aspect-video w-full max-w-5xl overflow-hidden rounded-[2.5rem] bg-black shadow-2xl ring-1 ring-black/5"
+                className="relative mt-16 aspect-video w-full max-w-5xl overflow-hidden rounded-[2.5rem] bg-zinc-100 shadow-2xl ring-1 ring-black/5"
               >
-                {/* Fallback Image / Video Placeholder */}
                 <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_u1h0bgu1h0bgu1h0-1766595910540.png?width=1920&height=1080&resize=contain"
-                  alt="Sankranthi Map Animation"
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/WhatsApp-Image-2025-12-24-at-8.03.03-PM-1766596163087.jpeg?width=8000&height=8000&resize=contain"
+                  alt="Aay Memu Godarollamandi Culture"
                   fill
-                  className="object-cover opacity-60"
+                  className="object-cover"
                   priority
                 />
                 
-                {/* User can replace this with their actual video file */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex flex-col items-center gap-4 text-white">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white/10 backdrop-blur-xl ring-1 ring-white/20">
-                      <Play className="h-8 w-8 fill-white" />
-                    </div>
-                    <span className="text-sm font-bold tracking-widest uppercase opacity-80">Map Animation Playing</span>
-                  </div>
-                </div>
-
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 
                 <div className="absolute bottom-8 left-8 text-left">
